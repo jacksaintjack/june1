@@ -125,16 +125,31 @@ function longest(){
   console.log(poppy);
   console.log(specialArray);
 // .push()
-  var specialArray =["h","e","l","l","o"];
-
+  var specialArray =["hello","goodbye"];
+  var expantionPack = specialArray.push("man", "dog");
+  console.log(specialArray);
+  console.log(expantionPack);
 // .slice()
-
+  var colors = ['purle', 'banana', 'cats', 'red', 'Mango'];
+  var selectColors = colors.slice(2, 4);
+  console.log(selectColors);
 // .splice()
-
+  var colors = ['purle', 'banana', 'cats', 'red', 'Mango'];
+  var selectColors = colors.splice(2, 4);
+  console.log(selectColors);
 // .shift()
-
+  var colors = ['purle', 'banana', 'cats', 'red', 'Mango'];
+  var shiftColors = colors.shift();
+  console.log(shiftColors);
 // .unshift()
-
+  var colors = ['purle', 'banana', 'cats', 'red', 'Mango'];
+  var shiftColors = colors.unshift();
+  console.log(shiftColors);
 // .filter()
-
+  var colors = ['purle', 'banana', 'cats', 'red', 'Mango'];
+  var shiftColors = colors.unshift(0);
+  console.log(shiftColors);
 // .map()
+  var collectiveNumber = [1, 2, 5, 10];
+  var squareRoot = collectiveNumber.map(Math.sqrt);
+  console.log(squareRoot);
