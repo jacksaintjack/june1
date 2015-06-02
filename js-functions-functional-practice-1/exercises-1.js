@@ -52,7 +52,7 @@ function average(){
     // parse arguments into an array
     var args = [].slice.call(arguments);
       for(var i = 0; i < args.length; i++){
-        total = total +args[i];
+        total = total + args[i];
       }
       answer = (total /args.length);
     // .. do something with each element of args
@@ -66,7 +66,7 @@ console.assert( average(2, 4, 6, 8) === 5 )
 function largest(){
     // parse arguments into an array
     var args = [].slice.call(arguments);
-
+    return Math.max.apply(null, args);
 
     // .. do something with each element of args
     // YOUR CODE HERE
@@ -76,19 +76,20 @@ console.assert( largest(2, 4, 6, 8) === 8 )
 
 // 4. find the longest string of the inputs (returns the longest input (A STRING))
 
-var text = "";
 function longest(){
+    var longestString = "";
     // parse arguments into an array
     var args = [].slice.call(arguments);
 
     // .. do something with each element of args
     // YOUR CODE HERE
     args.forEach(function(newText){
-      if(text.length < newText.length){
-      text = newText;
+      if(longestString.length < newText.length){
+      longestString = newText;
     }
   })
 };
+
 
  console.assert( longest("this", "is", "a", "awesome", "function") === "function" );
 
